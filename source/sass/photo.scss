@@ -1,0 +1,29 @@
+.photo__intro {
+  min-height: 189px;
+}
+
+.photo__title {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+  color: $black;
+
+  background-color: $white;
+}
+
+.photo__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.photo__item {
+  padding: 20px;
+
+  border-bottom: 1px solid $border-color;
+
+  &:first-child {
+    border-top: 1px solid $border-color;
+  }
+}

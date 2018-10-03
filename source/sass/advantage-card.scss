@@ -1,0 +1,28 @@
+.advantage-card {
+  min-height: 167px;
+
+  font-size: 14px;
+  line-height: 21px;
+  color: $gray;
+
+  background-color: $lightgray;
+
+  &--extended {
+    min-height: 451px;
+
+    color: $white;
+
+    background-color: $blue;
+
+    .advantage-card__title {
+      color: inherit;
+    }
+  }
+}
+
+.advantage-card__title {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+  color: $black;
+}

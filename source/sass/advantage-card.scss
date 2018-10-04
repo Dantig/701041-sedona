@@ -14,10 +14,21 @@
 
     background-color: $blue;
 
+    .advantage-card__content {
+      padding-top: 40px;
+      padding-bottom: 40px;
+    }
+
     .advantage-card__title {
       color: inherit;
     }
   }
+}
+
+.advantage-card__content {
+  padding: 20px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .advantage-card__title {
@@ -25,4 +36,12 @@
   line-height: 26px;
   font-weight: bold;
   color: $black;
+}
+
+.advantage-card__picture {
+  display: inline-block;
+  width: 320px;
+  height: 260px;
+
+  vertical-align: top;
 }

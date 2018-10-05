@@ -1,0 +1,17 @@
+.photo-card {
+  font-weight: bold;
+  color: $black;
+
+  background-color: $white;
+}
+
+.photo-card__preview {
+  width: 280px;
+  height: 280px;
+}
+
+.photo-card__author {
+  font-weight: normal;
+  color: $gray;
+  text-transform: none;
+}

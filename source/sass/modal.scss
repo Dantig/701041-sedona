@@ -1,0 +1,14 @@
+.modal {
+  min-height: 280px;
+
+  color: $gray;
+
+  background-color: $white;
+}
+
+.modal__title {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+  color: $black;
+}

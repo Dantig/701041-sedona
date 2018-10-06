@@ -18,6 +18,11 @@ gulp.task("css", function () {
     .pipe(server.stream());
 });
 
+gulp.task("add-normalize", function () {
+  return gulp.src("source/sass/normalize.css")
+    .pipe(gulp.dest("source/css"))
+});
+
 gulp.task("server", function () {
   server.init({
     server: "source/",
@@ -31,4 +36,5 @@ gulp.task("server", function () {
   gulp.watch("source/*.html").on("change", server.reload);
 });
 
-gulp.task("start", gulp.series("css", "server"));
+gulp.task("start", gulp.series("add-normalize", "css", "server"));
+gulp.task("build", gulp.series("add-normalize", "css"));

@@ -1,8 +1,24 @@
+.photo {
+  background-color: $white;
+}
+
 .photo__intro {
   min-height: 189px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 248px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 287px;
+    width: 1200px;
+    margin: 0 auto;
+  }
 }
 
 .photo__title {
+  margin: 0;
+
   font-size: 18px;
   line-height: 26px;
   font-weight: bold;
@@ -12,10 +28,19 @@
 }
 
 .photo__list {
+  min-height: 1660px;
   margin: 0;
   padding: 0;
 
   list-style: none;
+
+  @media (min-width: $tablet-width) {
+    min-height: 1174px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 667px;
+  }
 }
 
 .photo__item {

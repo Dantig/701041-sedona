@@ -2,9 +2,26 @@
   min-height: 637px;
 }
 
+.visit-sedona__order {
+  min-height: 288px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 318px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 330px;
+  }
+}
+
 .visit-sedona__title {
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
   color: $black;
+}
+
+.visit-sedona__map {
+  height: 350px;
+  width: 100%;
 }

@@ -1,6 +1,13 @@
+.advantage {
+  background-color: $white;
+}
+
 .advantage__intro {
   min-height: 223px;
-  padding: 20px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 206px;
+  }
 }
 
 .advantage__title {
@@ -18,8 +25,13 @@
 }
 
 .advantage__list {
+  min-height: 1840px;
   margin: 0;
   padding: 0;
 
   list-style: none;
+
+  @media (min-width: $tablet-width) {
+    min-height: 1098px;
+  }
 }

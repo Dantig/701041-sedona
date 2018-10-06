@@ -6,6 +6,27 @@
   color: $black;
 
   background-color: $white;
+
+  @media (min-width: $tablet-width) {
+    min-height: 120px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1200px;
+    margin: 0 auto;
+  }
+
+  &--inner {
+    min-height: 233px;
+
+    @media (min-width: $tablet-width) {
+      min-height: 120px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 1200px;
+    }
+  }
 }
 
 .footer__hashtag {

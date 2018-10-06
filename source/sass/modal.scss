@@ -1,9 +1,15 @@
 .modal {
   min-height: 280px;
+  width: $mobile-width;
 
   color: $gray;
 
   background-color: $white;
+
+  @media (min-width: $tablet-width) {
+    min-height: 347px;
+    width: 400px;
+  }
 }
 
 .modal__title {

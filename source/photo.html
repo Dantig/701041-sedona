@@ -2,10 +2,12 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="css/normalize.css"/>
     <link rel="stylesheet" href="css/style.css">
   </head>
-  <body class="page">
+  <body>
     <header class="header">
       <button class="header__menu-button header__menu-button--close" type="button">
         <span class="visually-hidden">Закрыть</span>
@@ -25,10 +27,10 @@
             <a class="button nav__link" href="https://htmlacademy.ru/intensive/adaptive">HTML academy</a>
           </li>
         </ul>
+        <a class="header__logo">
+          <img class="header__logo-img" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="City of Sedona">
+        </a>
       </nav>
-      <a class="header__logo">
-        <img class="header__logo-img" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="City of Sedona">
-      </a>
       <button class="header__menu-button header__menu-button--open" type="button">
         <span class="visually-hidden">Меню</span>
       </button>
@@ -95,13 +97,17 @@
         </ul>
       </section>
       <section class="video">
-        <h2 class="visually-hidden">Видео</h2>
-        <b class="video__subtitle">Все еще сомневаетесь?</b>
-        <p class="video__text">Смотрите видеопрезентацию и&nbsp;скорее за&nbsp;билетами, пока они не&nbsp;подорожали в&nbsp;очередной раз!</p>
-        <video class="video__item" src="#" controls></video>
+        <div class="video__intro">
+          <h2 class="visually-hidden">Видео</h2>
+          <b class="video__subtitle">Все еще сомневаетесь?</b>
+          <p class="video__text">Смотрите видеопрезентацию и&nbsp;скорее за&nbsp;билетами, пока они не&nbsp;подорожали в&nbsp;очередной раз!</p>
+        </div>
+        <div class="video__preview">
+          <video src="#" controls></video>
+        </div>
       </section>
     </main>
-    <footer class="footer">
+    <footer class="footer footer--inner">
       <b class="footer__hashtag">#visitsedona</b>
       <ul class="social footer__social">
         <li class="social__item">

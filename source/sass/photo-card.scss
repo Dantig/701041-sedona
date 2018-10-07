@@ -3,11 +3,42 @@
   color: $black;
 
   background-color: $white;
+
+  @media (min-width: $tablet-width) {
+    flex-grow: 1;
+    width: 324px;
+    min-height: 347px;
+
+    &--first {
+      min-height: 480px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 267px;
+
+    &--first {
+      min-height: 400px;
+    }
+  }
 }
 
 .photo-card__preview {
   width: 280px;
   height: 280px;
+}
+
+.photo-card__content {
+  min-height: 111px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    min-height: 80px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: -80px;
+  }
 }
 
 .photo-card__author {

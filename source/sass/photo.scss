@@ -1,4 +1,7 @@
 .photo {
+  padding-left: 60px;
+  padding-right: 60px;
+
   background-color: $white;
 }
 
@@ -35,6 +38,8 @@
   list-style: none;
 
   @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
     min-height: 1174px;
   }
 
@@ -44,11 +49,19 @@
 }
 
 .photo__item {
-  padding: 20px;
-
+  display: flex;
   border-bottom: 1px solid $border-color;
 
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
+
   &:first-child {
+    width: 100%;
     border-top: 1px solid $border-color;
+
+    @media (min-width: $tablet-width) {
+      border: none;
+    }
   }
 }

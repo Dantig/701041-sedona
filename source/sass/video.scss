@@ -1,5 +1,44 @@
 .video {
-  min-height: 450px;
+  min-height: 508px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 784px;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 830px;
+    padding-left: 200px;
+    padding-right: 200px;
+  }
+}
+
+.video__intro {
+  min-height: 193px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 244px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 246px;
+  }
+}
+
+.video__preview {
+  height: 267px;
+  width: $mobile-width;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    height: 500px;
+    width: 648px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 800px;
+  }
 }
 
 .video__subtitle {

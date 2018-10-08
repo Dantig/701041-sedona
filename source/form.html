@@ -2,10 +2,12 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="css/normalize.css"/>
     <link rel="stylesheet" href="css/style.css"/>
   </head>
-  <body class="page">
+  <body>
     <header class="header">
       <button class="header__menu-button header__menu-button--close" type="button">
         <span class="visually-hidden">Закрыть</span>
@@ -25,10 +27,10 @@
             <a class="button nav__link" href="https://htmlacademy.ru/intensive/adaptive">HTML academy</a>
           </li>
         </ul>
+        <a class="header__logo">
+          <img class="header__logo-img" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="City of Sedona">
+        </a>
       </nav>
-      <a class="header__logo">
-        <img class="header__logo-img" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="City of Sedona">
-      </a>
       <button class="header__menu-button header__menu-button--open" type="button">
         <span class="visually-hidden">Меню</span>
       </button>
@@ -40,7 +42,7 @@
           <h2 class="feedback__title">Оставьте свой отзыв</h2>
           <p class="feedback__text">Помогите нашим отелям стать лучше! оставьте отзыв о&nbsp;них, а&nbsp;также о&nbsp;посещенных вами достопримечательностях</p>
         </div>
-        <form method="post" action="https://echo.htmlacademy.ru">
+        <form class="feedback__form" method="post" action="https://echo.htmlacademy.ru">
           <fieldset class="feedback__group">
             <legend class="feedback__group-title">Представьтесь:</legend>
             <ul class="feedback__list">
@@ -71,7 +73,7 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="feedback__group">
+          <fieldset class="feedback__group feedback__group--rating">
             <legend class="feedback__group-title">Ваше общее впечатление:</legend>
             <ul class="feedback__list">
               <li class="feedback__item">
@@ -88,7 +90,7 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="feedback__group">
+          <fieldset class="feedback__group feedback__group--place">
             <legend class="feedback__group-title">Посещенные достопримечательности:</legend>
             <ul class="feedback__list">
               <li class="feedback__item">
@@ -109,7 +111,7 @@
               </li>
             </ul>
           </fieldset>
-          <div>
+          <div class="feedback__group">
             <label class="feedback__group-title" for="feedback-message">Опишите свои эмоции:</label>
             <textarea class="feedback__textarea" name="feedback__textarea" id="feedback-message" placeholder="Опишите подробно все свои восторги"></textarea>
           </div>
@@ -117,7 +119,7 @@
         </form>
       </section>
     </main>
-    <footer class="footer">
+    <footer class="footer footer--inner">
       <b class="footer__hashtag">#visitsedona</b>
       <ul class="social footer__social">
         <li class="social__item">

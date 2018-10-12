@@ -1,5 +1,6 @@
 .footer {
-  min-height: 243px;
+  padding: 20px;
+  padding-top: 29px;
 
   font-size: 14px;
   line-height: 26px;
@@ -10,9 +11,10 @@
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
-    min-height: 120px;
+    align-items: center;
     padding-left: 60px;
     padding-right: 60px;
+    padding-bottom: 36px;
   }
 
   @media (min-width: $desktop-width) {
@@ -31,8 +33,64 @@
   }
 }
 
+.footer__tag {
+  margin-bottom: 34px;
+
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
+}
+
 .footer__hashtag {
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
+}
+
+.footer__social {
+  margin-bottom: 37px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
+}
+
+.footer__development {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3px;
+
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
+}
+
+.footer__development-link {
+  margin-left: 12px;
+
+  &:focus,
+  &:hover {
+    svg {
+      fill: $blue;
+    }
+  }
+
+  &:active {
+    svg {
+      fill: $black;
+      opacity: 0.3;
+    }
+  }
+}
+
+.footer__development-logo {
+  display: inline-block;
+  width: 41px;
+
+  vertical-align: top;
 }

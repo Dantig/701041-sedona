@@ -1,11 +1,13 @@
 .content {
+  display: block;
+
   &--main {
     padding-top: 389px;
 
     background-image: url("../img/bg-intro-triangle-mobile.svg"), url("../img/text-sedona-index.svg"), url("../img/bg-back-mobile@1x.jpg");
     background-repeat: no-repeat, no-repeat, no-repeat;
-    background-position: center 326px, center 90px, center top;
-    background-size: 768px auto, 282px auto, auto;
+    background-position: center 362px, center 90px, center top;
+    background-size: auto 27px, 282px auto, auto;
   }
 
   &--inner {

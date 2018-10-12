@@ -1,20 +1,14 @@
 .advantage-card {
   flex-grow: 1;
-  min-height: 167px;
 
   font-size: 14px;
   line-height: 21px;
   color: $gray;
+  text-align: center;
 
   background-color: $lightgray;
 
-  @media (min-width: $tablet-width) {
-    width: 256px;
-  }
-
   &--extended {
-    min-height: 451px;
-
     color: $white;
 
     background-color: $blue;
@@ -22,7 +16,6 @@
     @media (min-width: $tablet-width) {
       display: flex;
       width: $tablet-width;
-      min-height: 256px;
     }
 
     @media (min-width: $desktop-width) {
@@ -35,30 +28,128 @@
   }
 
   &--extended &__content {
-    min-height: 191px;
+    border: none;
+
+    @media (max-width: $mobile-width-only) {
+      padding-top: 39px;
+      padding-bottom: 41px;
+
+      &--first {
+        padding-top: 54px;
+
+        background-image: url("../img/bg-triangle.svg");
+        background-repeat: no-repeat;
+        background-position-y: -22px;
+      }
+    }
+
+    @media (min-width: $tablet-width) {
+      width: 170px;
+      padding: 43px;
+      padding-top: 46px;
+      order: 1;
+
+      &--first {
+        order: 0;
+      }
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 280px;
+      padding: 60px;
+      padding-top: 50px;
+    }
+  }
+
+  &--extended &__text {
+    padding-bottom: 0;
+
+    border: none;
   }
 }
 
 .advantage-card__content {
+  padding-top: 27px;
+  padding-right: 20px;
+  padding-left: 20px;
+
   @media (min-width: $tablet-width) {
-    width: 256px;
-    height: 256px;
+    width: 158px;
+    padding: 49px;
+    padding-top: 46px;
+    padding-bottom: 43px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 400px;
+    width: 310px;
+    padding: 45px;
+    padding-top: 44px;
+    padding-bottom: 65px;
   }
 }
 
 .advantage-card__title {
+  margin: 0 auto;
+  margin-bottom: 9px;
+
   font-size: 18px;
   line-height: 26px;
   font-weight: bold;
   color: $black;
+
+  @media (min-width: $tablet-width) {
+    font-size: 21px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 160px;
+  }
+}
+
+.advantage-card__number {
+  display: block;
+  margin-bottom: 15px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 22px;
+  }
+}
+
+.advantage-card__text {
+  margin: 0;
+  padding-bottom: 26px;
+
+  border-bottom: 1px solid rgba($black, 0.1);
+
+  &--no-border {
+    border: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 0;
+
+    border: none;
+  }
 }
 
 .advantage-card__picture {
-  flex-grow: 1;
-  width: 320px;
-  height: 260px;
+  img {
+    display: block;
+
+    width: 320px;
+    height: 260px;
+  }
+
+  @media (min-width: $tablet-width) {
+    img {
+      width: 512px;
+      height: 256px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    img {
+      width: 800px;
+    }
+  }
 }

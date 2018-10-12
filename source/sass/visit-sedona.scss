@@ -1,27 +1,68 @@
 .visit-sedona {
-  min-height: 637px;
+  color: $gray;
+  text-align: center;
+
+  background-color: $white;
 }
 
 .visit-sedona__order {
-  min-height: 288px;
+  padding: 20px;
+  padding-top: 30px;
 
   @media (min-width: $tablet-width) {
-    min-height: 318px;
+    padding-top: 55px;
+    padding-right: 154px;
+    padding-left: 154px;
   }
 
   @media (min-width: $desktop-width) {
-    min-height: 330px;
+    padding-right: 371px;
+    padding-left: 371px;
   }
 }
 
 .visit-sedona__title {
+  display: block;
+  margin-bottom: 19px;
+
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
   color: $black;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    margin-bottom: 32px;
+  }
+}
+
+.visit-sedona__text {
+  margin: 0;
+  margin-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 41px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 46px;
+  }
 }
 
 .visit-sedona__map {
   height: 350px;
   width: 100%;
+}
+
+.visit-sedona__button {
+  display: block;
+  margin-bottom: 29px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 38px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 46px;
+  }
 }

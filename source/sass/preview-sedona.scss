@@ -1,0 +1,61 @@
+.preview-sedona {
+  padding-bottom: 48px;
+
+  color: $gray;
+
+  background-color: $white;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-bottom: 94px;
+  }
+}
+
+.preview-sedona__intro {
+  padding: 34px;
+  padding-left: 40px;
+  padding-right: 40px;
+
+  text-align: center;
+
+
+  @media (min-width: $tablet-width) {
+    padding: 102px;
+    padding-top: 67px;
+    padding-bottom: 76px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 70px;
+    padding-right: 180px;
+    padding-left: 180px;
+    padding-bottom: 72px;
+  }
+}
+
+.preview-sedona__text {
+  margin: 0;
+}
+
+.preview-sedona__title {
+  display: inline-block;
+  margin-bottom: 26px;
+
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+  color: $black;
+  vertical-align: top;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 30px;
+
+    font-size: 30px;
+  }
+}

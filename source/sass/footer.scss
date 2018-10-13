@@ -25,11 +25,7 @@
   }
 
   &--inner {
-    min-height: 233px;
-
-    @media (min-width: $tablet-width) {
-      min-height: 120px;
-    }
+    padding-top: 27px;
   }
 }
 
@@ -71,7 +67,7 @@
 }
 
 .footer__development-link {
-  margin-left: 12px;
+  margin-left: 4px;
 
   &:focus,
   &:hover {
@@ -91,6 +87,7 @@
 .footer__development-logo {
   display: inline-block;
   width: 41px;
+  margin-right: -7px;
 
   vertical-align: top;
 }

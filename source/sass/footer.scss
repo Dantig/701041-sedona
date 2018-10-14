@@ -12,16 +12,16 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-left: 60px;
     padding-right: 60px;
     padding-bottom: 36px;
+    padding-left: 60px;
   }
 
   @media (min-width: $desktop-width) {
     width: 960px;
     margin: 0 auto;
-    padding-left: 120px;
     padding-right: 120px;
+    padding-left: 120px;
   }
 
   &--inner {
@@ -40,9 +40,9 @@
 }
 
 .footer__hashtag {
+  font-weight: bold;
   font-size: 21px;
   line-height: 26px;
-  font-weight: bold;
 }
 
 .footer__social {
@@ -78,8 +78,9 @@
 
   &:active {
     svg {
-      fill: $black;
       opacity: 0.3;
+
+      fill: $black;
     }
   }
 }

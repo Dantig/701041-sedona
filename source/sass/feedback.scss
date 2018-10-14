@@ -1,40 +1,40 @@
 .feedback {
-  color: $gray;
   text-align: center;
+  color: $gray;
 
   background-color: $white;
 
   @media (min-width: $tablet-width) {
-    padding-left: 60px;
     padding-right: 60px;
     padding-bottom: 22px;
+    padding-left: 60px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 120px;
     padding-right: 120px;
     padding-bottom: 27px;
+    padding-left: 120px;
   }
 }
 
 .feedback__intro {
   padding-top: 37px;
-  padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 17px;
+  padding-left: 20px;
 
   @media (min-width: $tablet-width) {
     padding-top: 74px;
-    padding-left: 80px;
     padding-right: 80px;
     padding-bottom: 69px;
+    padding-left: 80px;
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 112px;
     padding-right: 250px;
-    padding-left: 250px;
     padding-bottom: 53px;
+    padding-left: 250px;
   }
 }
 
@@ -58,14 +58,15 @@
   margin: 0;
   margin-bottom: 26px;
 
+  font-weight: bold;
   font-size: 18px;
   line-height: 26px;
-  font-weight: bold;
   color: $black;
 
   @media (min-width: $tablet-width) {
-    font-size: 30px;
     margin-bottom: 31px;
+
+    font-size: 30px;
   }
 }
 
@@ -94,6 +95,7 @@
 
   &--message {
     padding-bottom: 44px;
+
     border: none;
   }
 
@@ -107,17 +109,17 @@
     border-bottom: none;
 
     &--contacts {
-      padding: 0;
       margin-bottom: 12px;
+      padding: 0;
     }
 
     &--rating {
       order: 0;
       width: 272px;
-      padding-right: 51px;
-      padding-left: 0;
-      padding-bottom: 0;
       margin-top: -11px;
+      padding-right: 51px;
+      padding-bottom: 0;
+      padding-left: 0;
 
       text-align: left;
 
@@ -125,23 +127,23 @@
     }
 
     &--info {
-      width: 324px;
-      padding-left: 58px;
-      padding-right: 0;
-      margin-top: -11px;
       box-sizing: border-box;
+      width: 324px;
+      margin-top: -11px;
+      padding-right: 0;
+      padding-left: 58px;
 
       text-align: left;
     }
 
     &--place {
-      padding: 0;
       margin-bottom: 21px;
+      padding: 0;
     }
 
     &--message {
-      padding: 0;
       margin-bottom: 52px;
+      padding: 0;
     }
   }
 
@@ -166,8 +168,8 @@
 }
 
 .feedback__submit {
-  padding-left: 20px;
   padding-right: 20px;
+  padding-left: 20px;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -197,6 +199,7 @@
 
   @media (min-width: $tablet-width) {
     display: inline-block;
+
     vertical-align: top;
   }
 }

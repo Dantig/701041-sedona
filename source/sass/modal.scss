@@ -10,7 +10,6 @@
 
   background-color: $white;
   box-shadow: 0 0 15px 7px rgba($black, 0.15);
-
   transform: translate(-50%);
 
   &--closed {
@@ -66,9 +65,9 @@
   margin: 0;
   margin-bottom: 30px;
 
+  font-weight: bold;
   font-size: 18px;
   line-height: 26px;
-  font-weight: bold;
   color: $black;
 
   @media (min-width: $tablet-width) {
@@ -84,8 +83,8 @@
 
   @media (min-width: $tablet-width) {
     padding: 44px;
-    padding-left: 91px;
     padding-right: 91px;
+    padding-left: 91px;
   }
 }
 

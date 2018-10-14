@@ -5,10 +5,9 @@
   padding-top: 20px;
   padding-bottom: 20px;
 
+  list-style: none;
   font-size: 14px;
   line-height: 21px;
-
-  list-style: none;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -83,9 +82,9 @@
   margin: 0;
   margin-bottom: 15px;
 
+  font-weight: bold;
   font-size: 18px;
   line-height: 26px;
-  font-weight: bold;
   color: $black;
 
   @media (min-width: $tablet-width) {

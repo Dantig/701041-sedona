@@ -3,8 +3,8 @@
 
   font-size: 14px;
   line-height: 21px;
-  color: $gray;
   text-align: center;
+  color: $gray;
 
   background-color: $lightgray;
 
@@ -44,10 +44,10 @@
     }
 
     @media (min-width: $tablet-width) {
+      order: 1;
       width: 170px;
       padding: 43px;
       padding-top: 46px;
-      order: 1;
 
       &--first {
         order: 0;
@@ -92,9 +92,9 @@
   margin: 0 auto;
   margin-bottom: 9px;
 
+  font-weight: bold;
   font-size: 18px;
   line-height: 26px;
-  font-weight: bold;
   color: $black;
 
   @media (min-width: $tablet-width) {
@@ -135,7 +135,6 @@
 .advantage-card__picture {
   img {
     display: block;
-
     width: 320px;
     height: 260px;
   }

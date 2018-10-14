@@ -1,25 +1,25 @@
 //feedback__group
 .fieldset {
+  margin: 0;
   padding: 0;
-  padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 5px;
-  margin: 0;
+  padding-left: 20px;
 
   border: none;
 }
 
 .fieldset__title {
   display: inline-block;
-  padding-top: 17px;
   margin: 0;
   margin-bottom: 22px;
+  padding-top: 17px;
 
+  font-weight: bold;
   font-size: 18px;
   line-height: 26px;
-  font-weight: bold;
-  color: $black;
   vertical-align: top;
+  color: $black;
 
   &--place {
     margin-bottom: 19px;
@@ -169,13 +169,12 @@
 
   font-size: 14px;
   line-height: 26px;
-
   text-align: left;
 
   &--bold {
+    font-weight: bold;
     font-size: 18px;
     line-height: 26px;
-    font-weight: bold;
     color: $black;
   }
 
@@ -203,8 +202,8 @@
 
     & > span {
       display: inline-block;
-      padding-left: 22px;
       margin-bottom: 6px;
+      padding-left: 22px;
 
       vertical-align: top;
     }
@@ -224,9 +223,10 @@
 
   &--radio {
     position: relative;
+
     padding: 15px;
-    padding-left: 79px;
     padding-right: 0;
+    padding-left: 79px;
 
     text-transform: none;
 
@@ -256,17 +256,17 @@
 
       background-color: $gray;
       border-radius: 50%;
-
       opacity: 0;
     }
   }
 
   &--checkbox {
     position: relative;
+
     padding-top: 13px;
-    padding-left: 79px;
     padding-right: 0;
     padding-bottom: 15px;
+    padding-left: 79px;
 
     text-transform: none;
 
@@ -297,7 +297,6 @@
       background-image: url("../img/icon-tick.svg");
       background-repeat: no-repeat;
       background-position: center;
-
       opacity: 0;
     }
   }
@@ -315,29 +314,29 @@
 
   @media (min-width: $desktop-width) {
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
 
     &--tel,
     &--email {
       & > span {
-        padding-left: 0;
-        padding-right: 15px;
         margin-bottom: 0;
+        padding-right: 15px;
+        padding-left: 0;
       }
     }
   }
 }
 
 .fieldset__input {
+  box-sizing: border-box;
   width: 100%;
   padding: 16px;
   padding-left: 21px;
-  box-sizing: border-box;
 
+  font-weight: bold;
   font-size: 18px;
   line-height: 26px;
-  font-weight: bold;
   color: $black;
 
   background-color: $input-color;
@@ -350,14 +349,15 @@
   &:focus {
     padding: 12px;
     padding-left: 17px;
+
     background-color: transparent;
     border: 4px solid $border-color;
   }
 
   &::placeholder {
+    font-weight: bold;
     font-size: 18px;
     line-height: 26px;
-    font-weight: bold;
     color: $black;
   }
 
@@ -391,24 +391,24 @@
 }
 
 .fieldset__textarea {
+  box-sizing: border-box;
   width: 100%;
   min-height: 160px;
   padding: 20px;
   padding-top: 15px;
-  box-sizing: border-box;
 
+  font-weight: bold;
   font-size: 18px;
   line-height: 26px;
-  font-weight: bold;
   color: $black;
 
   background-color: $input-color;
   border: none;
 
   &::placeholder {
+    font-weight: bold;
     font-size: 18px;
     line-height: 26px;
-    font-weight: bold;
     color: $black;
   }
 
@@ -419,6 +419,7 @@
   &:focus {
     padding: 16px;
     padding-top: 11px;
+
     background-color: transparent;
     border: 4px solid $border-color;
   }
@@ -427,8 +428,8 @@
 .fieldset__title-border {
   @media (min-width: $tablet-width) {
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
 
     &::before,
     &::after {

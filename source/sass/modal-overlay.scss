@@ -1,0 +1,15 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 5;
+
+  width: 100vw;
+  height: 100vh;
+
+  background-color: transparent;
+
+  &--closed {
+    display: none;
+  }
+}

@@ -14,6 +14,8 @@
   background-color: $blue;
   border: none;
 
+  cursor: pointer;
+
   &:not(&--disabled):focus,
   &:not(&--disabled):hover {
     background-color: $button-hover-color;

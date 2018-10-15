@@ -6,13 +6,13 @@
 
   @media (min-width: $tablet-width) {
     padding-right: 60px;
-    padding-bottom: 22px;
+    padding-bottom: 20px;
     padding-left: 60px;
   }
 
   @media (min-width: $desktop-width) {
     padding-right: 120px;
-    padding-bottom: 27px;
+    padding-bottom: 25px;
     padding-left: 120px;
   }
 }
@@ -109,15 +109,15 @@
     border-bottom: none;
 
     &--contacts {
-      margin-bottom: 12px;
+      margin-bottom: 13px;
       padding: 0;
     }
 
     &--rating {
       order: 0;
-      width: 272px;
+      width: 275px;
       margin-top: -11px;
-      padding-right: 51px;
+      padding-right: 48px;
       padding-bottom: 0;
       padding-left: 0;
 
@@ -142,7 +142,7 @@
     }
 
     &--message {
-      margin-bottom: 52px;
+      margin-bottom: 51px;
       padding: 0;
     }
   }
@@ -153,12 +153,18 @@
       padding-left: 79px;
     }
 
+    &--contacts {
+      margin-bottom: 11px;
+    }
+
     &--rating {
       width: 429px;
+      padding-right: 47px;
+      padding-left: 4px;
     }
 
     &--message {
-      margin-bottom: 50px;
+      margin-bottom: 52px;
     }
 
     &--place {
@@ -187,10 +193,12 @@
     width: auto;
     min-width: 324px;
     margin-right: auto;
+    padding-left: 7px;
   }
 
   @media (min-width: $desktop-width) {
     width: 480px;
+    padding-left: 17px;
   }
 }
 

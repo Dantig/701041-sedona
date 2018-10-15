@@ -50,12 +50,14 @@
 .nav__item {
   @media (min-width: $tablet-width) {
     &:nth-child(4n+3) {
-      margin-left: 156px;
+      margin-right: -2px;
+      margin-left: 158px;
     }
   }
 
   @media (min-width: $desktop-width) {
     &:nth-child(4n+3) {
+      margin-right: 0;
       margin-left: 244px;
     }
   }
@@ -96,7 +98,8 @@
   }
 
   @media (min-width: $tablet-width) {
-    min-width: 123px;
+    min-width: 122px;
+    padding-left: 16px;
 
     &[href]:focus,
     &[href]:hover {
@@ -122,6 +125,7 @@
 
   @media (min-width: $desktop-width) {
     min-width: 209px;
+    padding-left: 15px;
   }
 }
 
@@ -144,7 +148,7 @@
 .nav__toggle {
   position: absolute;
 
-  width: 56px;
+  width: 62px;
   height: 56px;
   padding: 0;
 

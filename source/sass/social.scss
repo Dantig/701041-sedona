@@ -11,8 +11,10 @@
 .social__item {
   margin-right: 6px;
 
-  &:last-child {
-    margin-right: 0;
+  @media (max-width: $mobile-width-only) {
+    &:last-child {
+      margin-right: 0;
+    }
   }
 }
 

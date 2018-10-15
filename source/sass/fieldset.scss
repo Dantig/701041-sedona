@@ -33,7 +33,7 @@
     font-size: 21px;
 
     &--rating {
-      margin-bottom: 55px;
+      margin-bottom: 56px;
     }
 
     &--info {
@@ -61,11 +61,13 @@
 
   @media (min-width: $desktop-width) {
     &--rating {
-      padding-left: 78px;
+      margin-bottom: 57px;
+      padding-left: 76px;
     }
 
     &--contacts {
-      margin-bottom: 73px;
+      margin-bottom: 74px;
+      padding-top: 16px;
     }
 
     &--place {
@@ -383,6 +385,9 @@
   }
 
   @media (min-width: $desktop-width) {
+    flex-grow: 1;
+    width: auto;
+
     &--tel,
     &--email {
       width: 316px;

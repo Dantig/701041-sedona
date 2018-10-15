@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
   padding-top: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 23px;
 
   list-style: none;
   font-size: 14px;
@@ -12,6 +12,15 @@
   @media (min-width: $tablet-width) {
     display: flex;
     padding: 0;
+  }
+}
+
+.sub-advantage__text {
+  margin: 0 auto;
+  margin-bottom: 12px;
+
+  br {
+    display: none;
   }
 }
 
@@ -30,14 +39,14 @@
   &--gift {
     background-image: url("../img/icon-gift.svg");
     background-repeat: no-repeat;
-    background-position: 25px 3px;
+    background-position: 25px 4px;
     background-size: 31px auto;
   }
 
   &--food {
     background-image: url("../img/icon-burger.svg");
     background-repeat: no-repeat;
-    background-position: 19px 8px;
+    background-position: 19px 10px;
     background-size: 39px auto;
   }
 
@@ -66,7 +75,13 @@
 
     &--food {
       background-position: center 64px;
-      background-size: 75px auto;
+      background-size: 76px auto;
+    }
+  }
+
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    &--house br {
+      display: inline;
     }
   }
 
@@ -75,6 +90,22 @@
     padding: 50px;
     padding-top: 158px;
     padding-bottom: 70px;
+
+    &--gift br {
+      display: inline;
+    }
+
+    &--house {
+      background-position: 161px 59px;
+    }
+
+    &--food {
+      background-position: center 62px;
+    }
+
+    &--gift {
+      background-position: center 55px;
+    }
   }
 }
 
@@ -91,20 +122,5 @@
     margin-bottom: 21px;
 
     font-size: 21px;
-  }
-}
-
-.sub-advantage__text {
-  margin: 0 auto;
-  margin-bottom: 13px;
-
-  br {
-    display: none;
-  }
-
-  @media (min-width: $desktop-width) {
-    br {
-      display: inline;
-    }
   }
 }

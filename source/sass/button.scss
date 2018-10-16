@@ -2,14 +2,33 @@
   display: inline-block;
   padding: 16px;
 
+  font-weight: bold;
   font-size: 21px;
   line-height: 26px;
-  font-weight: bold;
-  color: $white;
-  text-decoration: none;
-  text-transform: uppercase;
   vertical-align: top;
+  text-align: center;
+  color: $white;
+  text-transform: uppercase;
+  text-decoration: none;
 
   background-color: $blue;
   border: none;
+  cursor: pointer;
+
+  &:not(&--disabled):focus,
+  &:not(&--disabled):hover {
+    background-color: $button-hover-color;
+  }
+
+  &:active {
+    color: rgba($white, 0.3);
+
+    background-color: $button-active-color;
+  }
+
+  &:disabled,
+  &--disabled {
+    background-color: $button-disabled-color;
+    cursor: default;
+  }
 }

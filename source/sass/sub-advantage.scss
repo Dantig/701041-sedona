@@ -2,34 +2,125 @@
   flex-grow: 1;
   margin: 0;
   padding: 0;
+  padding-top: 20px;
+  padding-bottom: 23px;
 
+  list-style: none;
   font-size: 14px;
   line-height: 21px;
 
-  list-style: none;
-
   @media (min-width: $tablet-width) {
     display: flex;
+    padding: 0;
+  }
+}
+
+.sub-advantage__text {
+  margin: 0 auto;
+  margin-bottom: 12px;
+
+  br {
+    display: none;
+  }
+}
+
+.sub-advantage__item {
+  padding-top: 15px;
+  padding-right: 35px;
+  padding-left: 70px;
+
+  &--house {
+    background-image: url("../img/icon-house.svg");
+    background-repeat: no-repeat;
+    background-position: 21px 6px;
+    background-size: 38px auto;
+  }
+
+  &--gift {
+    background-image: url("../img/icon-gift.svg");
+    background-repeat: no-repeat;
+    background-position: 25px 4px;
+    background-size: 31px auto;
+  }
+
+  &--food {
+    background-image: url("../img/icon-burger.svg");
+    background-repeat: no-repeat;
+    background-position: 19px 10px;
+    background-size: 39px auto;
+  }
+
+  @media (min-width: $tablet-width) {
+    flex-grow: 1;
+    width: 170px;
+    padding: 43px;
+    padding-top: 160px;
+    padding-bottom: 48px;
+
+    text-align: center;
+
+    &:nth-child(2) {
+      order: 1;
+    }
+
+    &--house {
+      background-position: center 61px;
+      background-size: 75px auto;
+    }
+
+    &--gift {
+      background-position: center 57px;
+      background-size: 64px auto;
+    }
+
+    &--food {
+      background-position: center 64px;
+      background-size: 76px auto;
+    }
+  }
+
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    &--house br {
+      display: inline;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 300px;
+    padding: 50px;
+    padding-top: 158px;
+    padding-bottom: 70px;
+
+    &--gift br {
+      display: inline;
+    }
+
+    &--house {
+      background-position: 161px 59px;
+    }
+
+    &--food {
+      background-position: center 62px;
+    }
+
+    &--gift {
+      background-position: center 55px;
+    }
   }
 }
 
 .sub-advantage__title {
+  margin: 0;
+  margin-bottom: 15px;
+
+  font-weight: bold;
   font-size: 18px;
   line-height: 26px;
-  font-weight: bold;
   color: $black;
-}
-
-.sub-advantage__item {
-  min-height: 138px;
 
   @media (min-width: $tablet-width) {
-    flex-grow: 1;
-    width: 256px;
-    min-height: 330px;
-  }
+    margin-bottom: 21px;
 
-  @media (min-width: $desktop-width) {
-    width: 400px;
+    font-size: 21px;
   }
 }

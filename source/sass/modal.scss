@@ -1,20 +1,93 @@
 .modal {
-  min-height: 280px;
-  width: $mobile-width;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 10;
+
+  width: 320px;
 
   color: $gray;
 
   background-color: $white;
+  box-shadow: 0 0 15px 7px rgba($black, 0.15);
+  transform: translate(-50%);
+
+  &--closed {
+    display: none;
+  }
+
+  &--error &__footer {
+    padding: 70px;
+    padding-top: 0;
+    padding-bottom: 35px;
+
+    background-color: transparent;
+  }
 
   @media (min-width: $tablet-width) {
-    min-height: 347px;
-    width: 400px;
+    width: 640px;
+
+    &--error {
+      width: 400px;
+    }
+
+    &--error &__content {
+      padding: 58px;
+      padding-bottom: 19px;
+    }
+
+    &--error &__footer {
+      padding: 64px;
+      padding-bottom: 49px;
+    }
+
+    &--error &__title {
+      margin-bottom: 23px;
+    }
+  }
+}
+
+.modal__content {
+  padding: 53px;
+  padding-top: 44px;
+  padding-bottom: 21px;
+
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    padding: 98px;
+    padding-top: 63px;
+    padding-bottom: 21px;
   }
 }
 
 .modal__title {
+  margin: 0;
+  margin-bottom: 30px;
+
+  font-weight: bold;
   font-size: 18px;
   line-height: 26px;
-  font-weight: bold;
   color: $black;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 40px;
+  }
+}
+
+.modal__footer {
+  padding: 20px;
+
+  background-color: $bg-color;
+
+  @media (min-width: $tablet-width) {
+    padding: 44px;
+    padding-right: 91px;
+    padding-left: 91px;
+  }
+}
+
+.modal__button {
+  width: 100%;
 }

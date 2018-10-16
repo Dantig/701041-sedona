@@ -3,11 +3,21 @@ $black: #000000;
 $lightgray: #eeeeee;
 $gray: #333333;
 $blue: #81b3d2;
-
+$bg-color: #f2f2f2;
 $border-color: #e5e5e5;
-
-$input-color: #f2f2f2;
-
+$input-color: $bg-color;
+$input-checkbox-focus: #d5d5d5;
 $mobile-width: 320px;
 $tablet-width: 768px;
 $desktop-width: 1200px;
+$mobile-width-only: 767px;
+$button-main-color: #81b3d2;
+$button-hover-color: #669ec0;
+$button-active-color: #5496bd;
+$button-disabled-color: #e5e5e5;
+$nav-item-hover: $button-main-color;
+$nav-item-active: #766357;
+$nav-item-active-hover: #604e43;
+$video-mobile-control: #5c6870;
+$video-mobile-control-hover: $gray;
+$video-mobile-control-active: rgba($video-mobile-control-hover, 0.3);

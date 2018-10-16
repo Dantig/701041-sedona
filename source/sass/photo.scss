@@ -1,37 +1,53 @@
 .photo {
-  padding-left: 60px;
-  padding-right: 60px;
-
   background-color: $white;
 }
 
 .photo__intro {
-  min-height: 189px;
+  padding-top: 37px;
+  padding-right: 20px;
+  padding-bottom: 26px;
+  padding-left: 20px;
+
+  text-align: center;
 
   @media (min-width: $tablet-width) {
-    min-height: 248px;
+    padding-top: 74px;
+    padding-right: 169px;
+    padding-bottom: 69px;
+    padding-left: 169px;
   }
 
   @media (min-width: $desktop-width) {
-    min-height: 287px;
-    width: 1200px;
-    margin: 0 auto;
+    padding-top: 112px;
+    padding-right: 379px;
+    padding-bottom: 71px;
+    padding-left: 379px;
   }
 }
 
 .photo__title {
   margin: 0;
+  margin-bottom: 26px;
 
+  font-weight: bold;
   font-size: 18px;
   line-height: 26px;
-  font-weight: bold;
   color: $black;
 
   background-color: $white;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 31px;
+
+    font-size: 30px;
+  }
+}
+
+.photo__text {
+  margin: 0;
 }
 
 .photo__list {
-  min-height: 1660px;
   margin: 0;
   padding: 0;
 
@@ -40,27 +56,38 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
-    min-height: 1174px;
+    padding-right: 60px;
+    padding-left: 60px;
   }
 
   @media (min-width: $desktop-width) {
-    min-height: 667px;
+    padding: 0;
   }
 }
 
 .photo__item {
   display: flex;
+  padding: 20px;
+  padding-top: 22px;
+  padding-bottom: 16px;
+
   border-bottom: 1px solid $border-color;
 
   @media (min-width: $tablet-width) {
+    padding: 0;
+
     border: none;
   }
 
   &:first-child {
-    width: 100%;
+    padding-top: 23px;
+
     border-top: 1px solid $border-color;
 
     @media (min-width: $tablet-width) {
+      width: 100%;
+      padding-top: 0;
+
       border: none;
     }
   }

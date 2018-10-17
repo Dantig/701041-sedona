@@ -22,6 +22,16 @@
     background-size: 1202px 57px, 229px auto, auto;
   }
 
+  @media (min-resolution: $retina-dppx), (min-resolution: $retina-dpi) {
+    &--main {
+      background-image: url("../img/bg-intro-triangle-mobile.svg"), url("../img/text-sedona-index.svg"), url("../img/bg-back-mobile@2x.jpg");
+    }
+
+    &--inner {
+      background-image: url("../img/bg-intro-triangle-mobile.svg"), url("../img/text-sedona.svg"), url("../img/bg-back-mobile@2x.jpg");
+    }
+  }
+
   @media (min-width: $tablet-width) {
     &--main {
       padding-top: 518px;
@@ -37,8 +47,18 @@
 
       background-image: url("../img/bg-intro-triangle-desktop.svg"), url("../img/text-sedona.svg"), url("../img/bg-back-tablet@1x.jpg");
       background-repeat: no-repeat, no-repeat, no-repeat;
-      background-position: center 233px, center 94px, center -218px;
+      background-position: center 233px, center 94px, center -228px;
       background-size: 1202px 57px, 458px auto, 100% auto;
+    }
+
+    @media (min-resolution: $retina-dppx), (min-resolution: $retina-dpi) {
+      &--main {
+        background-image: url("../img/bg-intro-triangle-desktop.svg"), url("../img/text-sedona-index.svg"), url("../img/bg-back-tablet@2x.jpg");
+      }
+
+      &--inner {
+        background-image: url("../img/bg-intro-triangle-desktop.svg"), url("../img/text-sedona.svg"), url("../img/bg-back-tablet@2x.jpg");
+      }
     }
   }
 
@@ -62,6 +82,16 @@
       background-repeat: no-repeat, no-repeat, no-repeat;
       background-position: center 243px, center 102px, center -218px;
       background-size: 1202px 57px, 458px auto, 100% auto;
+    }
+
+    @media (min-resolution: $retina-dppx), (min-resolution: $retina-dpi) {
+      &--main {
+        background-image: url("../img/bg-intro-triangle-desktop.svg"), url("../img/text-sedona-index.svg"), url("../img/bg-back-desktop@2x.jpg");
+      }
+
+      &--inner {
+        background-image: url("../img/bg-intro-triangle-desktop.svg"), url("../img/text-sedona.svg"), url("../img/bg-back-desktop@2x.jpg");
+      }
     }
   }
 }

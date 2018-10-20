@@ -333,6 +333,8 @@
 .fieldset__input {
   box-sizing: border-box;
   width: 100%;
+  height: 58px;
+  min-width: 0;
   padding: 16px;
   padding-left: 21px;
 

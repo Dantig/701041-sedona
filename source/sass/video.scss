@@ -134,30 +134,40 @@
   background-color: transparent;
   border: none;
   cursor: pointer;
+
+  &:focus,
+  &:hover {
+    svg {
+      fill: $video-mobile-control-hover;
+    }
+  }
+
+  &:active {
+    svg {
+      fill: $video-mobile-control-active;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    &:focus,
+    &:hover {
+      svg {
+        fill: rgba($white, 0.6);
+      }
+    }
+
+    &:active {
+      svg {
+        fill: rgba($white, 0.3);
+      }
+    }
+  }
 }
 
 .video__button-icon {
   fill: $video-mobile-control;
 
-  &:focus,
-  &:hover {
-    fill: $video-mobile-control-hover;
-  }
-
-  &:active {
-    fill: $video-mobile-control-active;
-  }
-
   @media (min-width: $tablet-width) {
     fill: $white;
-
-    &:focus,
-    &:hover {
-      fill: rgba($white, 0.6);
-    }
-
-    &:active {
-      fill: rgba($white, 0.3);
-    }
   }
 }

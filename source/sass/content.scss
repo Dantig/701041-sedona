@@ -9,7 +9,7 @@
     background-image: url("../img/bg-intro-triangle-mobile.svg"), url("../img/text-sedona-index.svg"), url("../img/bg-back-mobile@1x.jpg");
     background-repeat: no-repeat, no-repeat, no-repeat;
     background-position: center 362px, center 90px, center top;
-    background-size: auto 27px, 282px auto, auto;
+    background-size: auto 27px, 282px auto, 768px 388px;
   }
 
   &--inner {
@@ -19,7 +19,7 @@
     background-image: url("../img/bg-intro-triangle-mobile.svg"), url("../img/text-sedona.svg"), url("../img/bg-back-mobile@1x.jpg");
     background-repeat: no-repeat, no-repeat, no-repeat;
     background-position: center 101px, center 52px, center -231px;
-    background-size: 1202px 57px, 229px auto, auto;
+    background-size: 1202px 57px, 229px auto, 768px 388px;
   }
 
   @media (min-resolution: $retina-dppx), (min-resolution: $retina-dpi) {
@@ -39,7 +39,7 @@
       background-image: url("../img/bg-intro-triangle-desktop.svg"), url("../img/text-sedona-index.svg"), url("../img/bg-back-tablet@1x.jpg");
       background-repeat: no-repeat, no-repeat, no-repeat;
       background-position: center 461px, center 77px, center top;
-      background-size: 1200px auto, 460px auto, 100% auto;
+      background-size: 1200px auto, 460px auto, 768px 518px;
     }
 
     &--inner {
@@ -48,7 +48,7 @@
       background-image: url("../img/bg-intro-triangle-desktop.svg"), url("../img/text-sedona.svg"), url("../img/bg-back-tablet@1x.jpg");
       background-repeat: no-repeat, no-repeat, no-repeat;
       background-position: center 233px, center 94px, center -228px;
-      background-size: 1202px 57px, 458px auto, 100% auto;
+      background-size: 1202px 57px, 458px auto, 768px 518px;
     }
 
     @media (min-resolution: $retina-dppx), (min-resolution: $retina-dpi) {
@@ -72,7 +72,7 @@
       background-image: url("../img/bg-intro-triangle-desktop.svg"), url("../img/text-sedona-index.svg"), url("../img/bg-back-desktop@1x.jpg");
       background-repeat: no-repeat, no-repeat, no-repeat;
       background-position: center 461px, center 77px, center top;
-      background-size: 1200px auto, 460px auto, auto;
+      background-size: 1200px auto, 460px auto, 1200px 518px;
     }
 
     &--inner {
@@ -81,7 +81,7 @@
       background-image: url("../img/bg-intro-triangle-desktop.svg"), url("../img/text-sedona.svg"), url("../img/bg-back-desktop@1x.jpg");
       background-repeat: no-repeat, no-repeat, no-repeat;
       background-position: center 243px, center 102px, center -218px;
-      background-size: 1202px 57px, 458px auto, 100% auto;
+      background-size: 1202px 57px, 458px auto, 1200px 518px;
     }
 
     @media (min-resolution: $retina-dppx), (min-resolution: $retina-dpi) {

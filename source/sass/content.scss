@@ -1,7 +1,7 @@
 .content {
   display: block;
 
-  background-color: $white;
+  background-color: $content-main-color;
 
   &--main {
     padding-top: 389px;
@@ -14,7 +14,6 @@
 
   &--inner {
     padding-top: 158px;
-    padding-bottom: 48px;
 
     background-image: url("../img/bg-intro-triangle-mobile.svg"), url("../img/text-sedona.svg"), url("../img/bg-back-mobile@1x.jpg");
     background-repeat: no-repeat, no-repeat, no-repeat;

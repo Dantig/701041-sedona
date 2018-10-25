@@ -16,7 +16,7 @@
     display: none;
   }
 
-  &--error &__footer {
+  &--error .modal__footer {
     padding: 70px;
     padding-top: 0;
     padding-bottom: 35px;
@@ -31,17 +31,17 @@
       width: 400px;
     }
 
-    &--error &__content {
+    &--error .modal__content {
       padding: 58px;
       padding-bottom: 19px;
     }
 
-    &--error &__footer {
+    &--error .modal__footer {
       padding: 64px;
       padding-bottom: 49px;
     }
 
-    &--error &__title {
+    &--error .modal__title {
       margin-bottom: 23px;
     }
   }

@@ -11,6 +11,7 @@
 
   @media (min-width: $tablet-width) {
     display: flex;
+    flex-wrap: wrap;
     padding: 0;
   }
 }
@@ -52,6 +53,7 @@
 
   @media (min-width: $tablet-width) {
     flex-grow: 1;
+    order: 2;
     width: 170px;
     padding: 43px;
     padding-top: 160px;
@@ -59,11 +61,12 @@
 
     text-align: center;
 
-    &:nth-child(2) {
-      order: 1;
-    }
-
     &--house {
+      order: 0;
+      width: 167px;
+      padding-left: 44px;
+      padding-right: 45px;
+
       background-position: center 61px;
       background-size: 75px auto;
     }
@@ -74,14 +77,13 @@
     }
 
     &--food {
+      order: 1;
       background-position: center 64px;
       background-size: 76px auto;
     }
-  }
 
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
-    &--house br {
-      display: inline;
+    &:last-child {
+      flex-grow: 0;
     }
   }
 
@@ -90,10 +92,6 @@
     padding: 50px;
     padding-top: 158px;
     padding-bottom: 70px;
-
-    &--gift br {
-      display: inline;
-    }
 
     &--house {
       background-position: 161px 59px;
@@ -105,6 +103,10 @@
 
     &--gift {
       background-position: center 55px;
+    }
+
+    &--gift br {
+      display: inline;
     }
   }
 }

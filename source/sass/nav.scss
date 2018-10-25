@@ -6,7 +6,7 @@
       margin-bottom: 56px;
     }
 
-    &--closed &__toggle {
+    &--closed .nav__toggle {
       right: 0;
 
       background-image: url("../img/icon-menu.svg");
@@ -14,17 +14,29 @@
       background-position: center;
     }
 
-    &--closed &__list {
+    &--closed .nav__list {
       display: none;
     }
 
-    &--opened &__toggle {
+    &--opened .nav__toggle {
       top: 0;
       right: 0;
 
       background-image: url("../img/icon-cross.svg");
       background-repeat: no-repeat;
       background-position: center;
+    }
+
+    &--nojs {
+      margin-bottom: 56px;
+    }
+
+    &--nojs .nav__list {
+      display: block;
+    }
+
+    &--nojs .nav__toggle {
+      display: none;
     }
   }
 }
